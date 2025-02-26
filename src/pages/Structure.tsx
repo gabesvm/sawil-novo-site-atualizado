@@ -129,4 +129,17 @@ const Structure = () => {
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {departments.map((dept, index) => (
-              <div key={index} className="bg-gray-50 p-6 rounded-lg border border-gray-
+              <div key={index} className="bg-gray-50 p-6 rounded-lg border border-gray-200">
+                <h3 className="text-xl font-semibold text-gray-900 mb-2">{dept.name}</h3>
+                <p className="text-gray-700 mb-3">{dept.description}</p>
+                <div className="text-sm font-medium text-sawil-600">{dept.team}</div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+    </div>
+  );
+};
+
+export default Structure;
