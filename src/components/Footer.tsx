@@ -141,18 +141,36 @@ const Footer = () => {
                   Presidente Prudente - SP, 19010-090
                 </span>
               </li>
+              <li className="flex items-start">
+                <Phone size={18} className="text-sawil-700 mt-0.5 mr-2 flex-shrink-0" />
+                <span className="text-gray-600 text-sm">
+                  (18) 3222-5000<br />
+                  (18) 99999-9999 (WhatsApp)
+                </span>
+              </li>
+              <li className="flex items-start">
+                <Mail size={18} className="text-sawil-700 mt-0.5 mr-2 flex-shrink-0" />
+                <a href="mailto:contato@sawil.com.br" className="text-gray-600 text-sm hover:text-sawil-700 transition-colors">
+                  contato@sawil.com.br
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        
+        <div className="mt-12 pt-8 border-t border-gray-200">
+          <div className="flex flex-col md:flex-row justify-between items-center">
+            <p className="text-gray-500 text-sm">
+              &copy; {currentYear} Sawil Contabilidade. Todos os direitos reservados.
+            </p>
+            <p className="text-gray-500 text-sm mt-2 md:mt-0">
+              Desenvolvido por <a href="#" className="text-sawil-700 hover:underline">Seu Nome</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  );
+};
 
-Se houver conhecimento, contexto ou instruções personalizadas que você deseja incluir em cada edição deste projeto, defina-o abaixo.
-
-<lov-actions>
-<lov-knowledge>
-</lov-actions>
-
-Como seu projeto requer funcionalidade de backend para o login da Área do Cliente e possivelmente para o formulário de contato, você pode usar o menu Supabase no canto superior direito para conectar seu projeto ao Supabase.
-<lov-actions>
-<lov-message-prompt message="Conte-me mais sobre o Supabase">Saiba mais sobre o Supabase</lov-message-prompt>
-</lov-actions>
-
-<lov-actions>
-<lov-link url="https://docs.lovable.dev/">Visite a documentação</lov-link>
-</lov-actions>
+export default Footer;
